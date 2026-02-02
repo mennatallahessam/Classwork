@@ -1,5 +1,13 @@
 # Classwork
-mypic.jpg
+![my photo] (mypic.jpg)
+
+
+
+
+
+
+
+
 About me
 May your life be filled with everlasting peace! (this is how we say hi in Egypt)
 I’m Mennatallah Essam (but you can just call me Menna :)). This picture is of me in the snow of the storm here in America. I chose it mainly because I felt that it represents how much I enjoy stepping outside of my comfort zone. I have always been keen on experiencing new things. I’m always pushing myself to grow by meeting new people, dealing with diversity as well as being aware of all different cultures and habits. I’m excited to be in this course. I am very curious to see how much this practical-learning course will teach me and work on enhancing my skills. A fun fact about me is that I studied at a boarding school in Egypt because I wanted to actually experience complete independence from such a young age.

@@ -1,5 +1,5 @@
 # Classwork
-![my photo] (mypic.jpg)
+![my photo] (mypic.jpeg)
 
 
 

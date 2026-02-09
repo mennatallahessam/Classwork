@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Menu Example</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 20px;
+background-color: #ffe6f0;
+}
+
+h1 {
+font-size: 24px;
+color: #ff1493;
+}
+
+.note {
+color: #6a1b9a;
+background-color: #f3e5f5;
+padding: 8px 12px;
+border-left: 5px solid #ba68c8;
+margin-bottom: 15px;
+font-size: 14px;
+}
+
+h3 {
+font-size: 18px;
+margin-top: 40px;
+color: #9370db;
+}
+
+.menu-bar {
+background: linear-gradient(to right, #ff6b6b, #4ecdc4, #45b7d1, #f7dc6f);
+padding: 0;
+margin: 20px 0;
+border: 3px solid #ff1493;
+border-radius: 10px;
+}
+
+.menu-item {
+display: inline-block;
+position: relative;
+}
+
+.menu-item > span, .menu-item label span {
+display: block;
+padding: 10px 15px;
+cursor: pointer;
+color: white;
+text-shadow: 1px 1px 2px black;
+}
+
+.menu-item:hover > span {
+background-color: #ff69b4;
+color: yellow;
+transform: scale(1.1);
+}
+
+.menu-item.bold > span {
+font-weight: bold;
+}
+
+.dropdown {
+display: none;
+position: absolute;
+background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+border: 3px solid #ff1493;
+min-width: 150px;
+z-index: 1000;
+box-shadow: 5px 5px 15px rgba(255,20,147,0.5);
+border-radius: 8px;
+}
+
+.menu-item.hover:hover .dropdown {
+display: block;
+}
+
+.dropdown div {
+padding: 8px 15px;
+cursor: pointer;
+color: white;
+border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.dropdown div:hover {
+background-color: #ff69b4;
+color: #ffff00;
+transform: translateX(5px);
+}
+
+.menu-item input {
+display: none;
+}
+
+.menu-item input:checked ~ .dropdown {
+display: block;
+}
+
+p {
+color: #2c3e50;
+background-color: #fff9c4;
+padding: 10px;
+border-left: 5px solid #ff6b6b;
+}
+</style>
+</head>
+<body>
+
+<h1>Menu Example</h1>
+
+<p class="note">
+Note: I intentionally changed the website colors to match my favorite color palette.
+</p>
+
+<div class="menu-bar">
+<div class="menu-item bold hover">
+<span>File</span>
+<div class="dropdown">
+<div>New</div>
+<div>Open</div>
+<div>Save</div>
+<div>Print</div>
+<div>Close</div>
+</div>
+</div>
+
+<div class="menu-item" id="edit-menu">
+<label for="edit-toggle"><span>Edit</span></label>
+<input type="checkbox" id="edit-toggle">
+<div class="dropdown">
+<div>Undo</div>
+<div>Redo</div>
+<div>Cut</div>
+<div>Copy</div>
+<div>Paste</div>
+<div>Delete</div>
+<div>Select All</div>
+</div>
+</div>
+
+<div class="menu-item bold hover">
+<span>View</span>
+<div class="dropdown">
+<div>Zoom In</div>
+<div>Zoom Out</div>
+<div>Actual Size</div>
+<div>Fit Page</div>
+<div>Fit Width</div>
+<div>Fit Height</div>
+<div>Rotate Left</div>
+<div>Rotate Right</div>
+<div>Full Screen</div>
+</div>
+</div>
+</div>
+
+<h3>Instructions</h3>
+<p>Recreate this page using <strong><em>only CSS</em></strong>. Do yourself a favor and 1) Do not view the source. Figure it out yourself. 2) Do not search for the solution. Learn CSS until you know enough to do this.</p>
+
+<h3>Extra Credit</h3>
+<p>Notice how the Edit menu (besides for not being bold) reacts to clicks. If you click the edit menu, it remains open until you click somewhere else. (This you might need to search for)</p>
+
+<script>
+document.addEventListener("click", function(e) {
+const editMenu = document.getElementById("edit-menu");
+const checkbox = document.getElementById("edit-toggle");
+if (!editMenu.contains(e.target)) {
+checkbox.checked = false;
+}
+});
+</script>
+
+</body>
+</html>
